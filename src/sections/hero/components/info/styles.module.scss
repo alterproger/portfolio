@@ -1,0 +1,32 @@
+.title {
+  font-size: var(--font-size-lg);
+}
+
+.hand {
+  width: 38px;
+  height: 38px;
+  margin-left: 0.4rem;
+}
+
+.subtitle {
+  position: relative;
+  font-size: var(--font-size-h3);
+  padding-left: 5.4rem;
+  font-weight: 400;
+  margin-bottom: var(--m-4);
+}
+
+.subtitle::before {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 1px;
+  background-color: var(--clr-text);
+  left: 0;
+  top: 1rem;
+}
+
+.description {
+  max-width: 400px;
+  margin-bottom: var(--m-8);
+}
