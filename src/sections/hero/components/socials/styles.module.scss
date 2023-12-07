@@ -1,0 +1,14 @@
+.socials {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+
+.icon {
+  font-size: 1.25rem;
+  color: var(--clr-title);
+}
+
+.icon:hover {
+  color: var(--clr-title-dark);
+}
