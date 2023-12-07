@@ -13,3 +13,45 @@
     --padding: 1.5rem;
   }
 }
+
+.section {
+  padding: 6rem 0 2rem;
+}
+
+.section-title {
+  font-size: var(--font-size-h1);
+  color: var(--clr-title);
+}
+
+.section-subtitle {
+  display: block;
+  font-size: var(--font-size-sm);
+  margin-bottom: 4rem;
+}
+
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--clr-title);
+  color: var(--clr-white);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: 500;
+}
+
+.button:hover {
+  background-color: var(--clr-title-dark);
+}
+
+.button-icon {
+  margin-left: var(--m-2);
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
