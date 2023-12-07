@@ -1,0 +1,36 @@
+:root {
+	--header-height: 3rem;
+
+	/*Color mode HSL(hue, saturation, lightness)*/
+	--hue: 0;
+	--sat: 0%;
+	--clr-title: hsl(var(--hue), var(--sat), 20%);
+	--clr-title-dark: hsl(var(--hue), var(--sat), 0%);
+	--clr-text: hsl(var(--hue), var(--sat), 46%);
+	--bg-body: hsl(var(--hue), var(--sat), 98%);
+	--clr-white: #fff;
+
+	/*.5rem = 8px | 1rem = 16px ...*/
+	--font-size-big: 3.5rem;
+	--font-size-h1: 2.25rem;
+	--font-size-h2: 1.5rem;
+	--font-size-h3: 1.25rem;
+	--font-size-normal: 1rem;
+	--font-size-sm: 0.875rem;
+	--font-size-xs: 0.813rem;
+	--font-size-2xs: 0.625rem;
+
+	/*.5rem = 8px | 1rem = 16px ...*/
+	--m-1: 0.25rem;
+	--m-2: 0.5rem;
+	--m-3: 0.75rem;
+	--m-4: 1rem;
+	--m-5: 1.5rem;
+	--m-6: 2rem;
+	--m-7: 2.5rem;
+	--m-8: 3rem;
+
+	--z-1: 10;
+	--z-2: 100;
+	--z-3: 1000;
+}
