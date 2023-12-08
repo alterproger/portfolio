@@ -15,7 +15,11 @@
 }
 
 .section {
-  padding: 6rem 0 2rem;
+  padding: 2rem 0 4rem;
+
+  @media (width >= 768px) {
+    padding: 6rem 0 2rem;
+  }
 }
 
 .section-title {
@@ -26,7 +30,11 @@
 .section-subtitle {
   display: block;
   font-size: var(--font-size-sm);
-  margin-bottom: 4rem;
+  margin-bottom: var(--mb-3);
+
+  @media (width >= 768px) {
+    margin-bottom: 4rem;
+  }
 }
 
 .section-title,
@@ -38,9 +46,13 @@
   display: inline-block;
   background-color: var(--clr-title);
   color: var(--clr-white);
-  padding: 1.25rem 2rem;
+  padding: 1rem 1.75rem;
   border-radius: 1rem;
   font-weight: 500;
+
+  @media (width >= 992px) {
+    padding: 1.25rem 2rem;
+  }
 }
 
 .button:hover {
@@ -49,6 +61,11 @@
 
 .button-icon {
   margin-left: var(--m-2);
+
+  @media (width < 992px) {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 .button--flex {
