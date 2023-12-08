@@ -1,6 +1,12 @@
 @import 'variables';
 @import 'scaffolding';
 
+body {
+  @media (width < 768px) {
+    margin: 0 0 var(--header-height) 0;
+  }
+}
+
 .container {
   --padding: 1rem;
 
