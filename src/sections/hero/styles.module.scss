@@ -1,0 +1,69 @@
+.container {
+  display: grid;
+  gap: 1.5rem;
+  row-gap: 7rem;
+}
+
+.content {
+  display: grid;
+  gap: 1.5rem;
+  padding-top: 3.5rem;
+  align-items: center;
+  grid-template-columns: 0.5fr 3fr;
+  column-gap: 1.2rem;
+
+  @media (width >= 768px) {
+    grid-template-columns: 100px repeat(2, 1fr);
+    padding-top: 5.5rem;
+  }
+
+  @media (width >= 992px) {
+    grid-template-columns: 116px repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+.img {
+  --img-size: 180px;
+  --shadow-size: 6px;
+
+  background-image: url('../../assets/img/profile.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 var(--shadow-size) rgb(255 255 255 / 30%);
+  width: var(--img-size);
+  height: var(--img-size);
+  animation: profile 8s ease-in-out infinite 1s;
+
+  @media (width >= 350px) {
+    --img-size: 200px;
+    --shadow-size: 8px;
+  }
+
+  @media (width >= 768px) {
+    --img-size: 250px;
+    --shadow-size: 8px;
+    order: 1;
+    justify-self: center;
+  }
+
+  @media (width >= 992px) {
+    --img-size: 300px;
+    --shadow-size: 9px;
+  }
+}
+
+@keyframes profile {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
