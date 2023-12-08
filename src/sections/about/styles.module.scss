@@ -1,0 +1,40 @@
+.container {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 4rem;
+
+  @media (width < 992px) {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+}
+
+.img {
+  width: 350px;
+  border-radius: 1.5rem;
+  justify-self: center;
+
+  @media (width < 992px) {
+    width: 220px;
+  }
+}
+
+.info {
+  @media (width < 992px) {
+    text-align: center;
+  }
+}
+
+.description {
+  padding: 0 4rem 0 0;
+  margin-bottom: var(--m-7);
+
+  @media (width < 992px) {
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (width < 576px) {
+    padding: 0;
+  }
+}
