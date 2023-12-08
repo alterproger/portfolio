@@ -11,7 +11,7 @@
   --clr-white: #fff;
 
   /*.5rem = 8px | 1rem = 16px ...*/
-  --font-size-lg: 3.5rem;
+  --font-size-lg: 2.25rem;
   --font-size-h1: 2.25rem;
   --font-size-h2: 1.5rem;
   --font-size-h3: 1.25rem;
@@ -33,4 +33,8 @@
   --z-1: 10;
   --z-2: 100;
   --z-3: 1000;
+
+  @media (width >= 350px) {
+    --font-size-lg: 3.5rem;
+  }
 }
