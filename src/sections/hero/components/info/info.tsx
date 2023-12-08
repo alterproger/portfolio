@@ -2,7 +2,7 @@ import styles from './styles.module.scss';
 
 const Info = () => {
   return (
-    <div className={styles['data']}>
+    <div className={styles['info']}>
       <h1 className={styles['title']}>
         John Smith
         <svg
