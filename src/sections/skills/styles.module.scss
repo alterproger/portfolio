@@ -1,0 +1,14 @@
+.container {
+  grid-template-columns: repeat(2, 350px);
+  column-gap: 3rem;
+  justify-content: center;
+
+  @media (width < 992px) {
+    grid-template-columns: max-content;
+    row-gap: 2rem;
+  }
+
+  @media (width < 576px) {
+    grid-template-columns: 1fr;
+  }
+}
