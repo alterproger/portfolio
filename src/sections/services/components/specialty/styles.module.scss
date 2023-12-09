@@ -1,0 +1,141 @@
+.content {
+  position: relative;
+  border: 1px solid rgb(0 0 0 /0.1);
+  background-color: #fff;
+  padding: 6rem 0 2rem 2.5rem;
+
+  @media (width < 768px) {
+    padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+  }
+
+  @media (width < 350px) {
+    padding-right: 6rem;
+  }
+}
+
+.icon {
+  --size: 2rem;
+
+  display: block;
+  width: var(--size);
+  height: var(--size);
+  color: var(--clr-title);
+  margin-bottom: var(--m-4);
+
+  @media (width < 768px) {
+    --size: 1.5rem;
+  }
+}
+
+.title {
+  font-size: var(--font-size-h3);
+  margin-bottom: var(--m-4);
+  font-weight: 500;
+}
+
+.button {
+  color: var(--clr-title);
+  font-size: var(--font-size-sm);
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  cursor: pointer;
+}
+
+.button-icon {
+  --size: 1rem;
+
+  width: var(--size);
+  height: var(--size);
+  transition: 0.3s;
+}
+
+.button:hover .button-icon {
+  transform: translateX(0.25rem);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(0 0 0 /0.5);
+  z-index: var(--z-3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.modal-content {
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  padding: 4.5rem 2.5rem 2.5rem;
+  border-radius: 1.5rem;
+
+  @media (width < 576px) {
+    padding: 4.5rem 1.5rem 2.5rem;
+  }
+}
+
+.modal-close {
+  --size: 1.5rem;
+
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: var(--size);
+  height: var(--size);
+  color: var(--clr-title);
+  cursor: pointer;
+}
+
+.modal-title,
+.modal-description {
+  text-align: center;
+}
+
+.modal-title {
+  font-size: var(--font-size-h3);
+  font-weight: 500;
+  margin-bottom: var(--m-4);
+}
+
+.modal-description {
+  font-size: var(--font-size-sm);
+  padding: 0 3.5rem;
+  margin-bottom: var(--m-6);
+
+  @media (width < 576px) {
+    padding: 0;
+  }
+}
+
+.modal-services {
+  row-gap: 0.75rem;
+}
+
+.modal-service {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.modal-icon {
+  --size: 1.1rem;
+  color: var(--clr-title);
+  width: var(--size);
+  height: var(--size);
+}
+
+.modal-info {
+  font-size: var(--font-size-sm);
+}
+
+.modal-active {
+  opacity: 1;
+  visibility: visible;
+}
