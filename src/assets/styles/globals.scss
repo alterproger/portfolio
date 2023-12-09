@@ -33,26 +33,6 @@ body {
   }
 }
 
-.section-title {
-  font-size: var(--font-size-h1);
-  color: var(--clr-title);
-}
-
-.section-subtitle {
-  display: block;
-  font-size: var(--font-size-sm);
-  margin-bottom: var(--m-3);
-
-  @media (width >= 768px) {
-    margin-bottom: 4rem;
-  }
-}
-
-.section-title,
-.section-subtitle {
-  text-align: center;
-}
-
 .button {
   display: inline-block;
   background-color: var(--clr-title);

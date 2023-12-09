@@ -1,3 +1,4 @@
+import { SectionSubtitle, SectionTitle } from '@/components/components';
 import clsx from 'clsx';
 import Image from 'next/image';
 import { Info } from './components/components';
@@ -11,8 +12,8 @@ const About = () => {
       id="about"
       className={clsx('section', styles['about'])}
     >
-      <h2 className="section-title">About Me</h2>
-      <span className="section-subtitle">My introduction</span>
+      <SectionTitle>About Me</SectionTitle>
+      <SectionSubtitle>My introduction</SectionSubtitle>
 
       <div className={clsx('container grid', styles['container'])}>
         <Image

@@ -1,0 +1,19 @@
+.title {
+  font-size: var(--font-size-h1);
+  color: var(--clr-title);
+}
+
+.subtitle {
+  display: block;
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--m-3);
+
+  @media (width >= 768px) {
+    margin-bottom: 4rem;
+  }
+}
+
+.title,
+.subtitle {
+  text-align: center;
+}
