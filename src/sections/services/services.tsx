@@ -7,7 +7,10 @@ import styles from './styles.module.scss';
 
 const Services = () => {
   return (
-    <section className={clsx('section', styles['services'])}>
+    <section
+      className={clsx('section', styles['services'])}
+      id="services"
+    >
       <SectionTitle>Services</SectionTitle>
       <SectionSubtitle>What I offer</SectionSubtitle>
 
