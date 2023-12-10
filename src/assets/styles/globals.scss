@@ -8,15 +8,15 @@ body {
 }
 
 .container {
-  --padding: 1rem;
+  max-width: 968px;
+  margin-inline: auto;
 
-  max-width: calc(968px + 2 * var(--padding));
-  margin-left: auto;
-  margin-right: auto;
-  padding-inline: var(--padding);
+  @media (width < 992px) {
+    margin-inline: var(--m-5);
+  }
 
-  @media (width > 350px) {
-    --padding: 1.5rem;
+  @media (width < 350px) {
+    margin-inline: var(--m-4);
   }
 }
 
