@@ -1,5 +1,6 @@
 import {
   About,
+  Contact,
   Hero,
   Qualification,
   Services,
@@ -16,6 +17,7 @@ export default function Home() {
       <Services />
       <Qualification />
       <Testimonials />
+      <Contact />
     </main>
   );
 }

@@ -1,0 +1,36 @@
+.container {
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  column-gap: 6rem;
+  padding-bottom: 3rem;
+
+  @media (width < 992px) {
+    column-gap: 3rem;
+  }
+
+  @media (width < 768px) {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: var(--font-size-h3);
+  font-weight: 500;
+  margin-bottom: var(--m-5);
+}
+
+.info {
+  display: grid;
+  row-gap: 1rem;
+  grid-template-columns: 300px;
+
+  @media (width < 768px) {
+    justify-content: center;
+  }
+
+  @media (width < 576px) {
+    grid-template-columns: 1fr;
+  }
+}
