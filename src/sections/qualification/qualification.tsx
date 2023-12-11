@@ -21,7 +21,11 @@ const Qualification = () => {
       <div className={clsx('container', styles['container'])}>
         <div className={styles['tabs']}>
           <div
-            className={clsx(styles['button'], 'button--flex', styles['active'])}
+            className={clsx(
+              styles['button'],
+              'button--flex',
+              activeContent === 'education' && styles['active'],
+            )}
             onClick={() => setActiveContent('education')}
           >
             <UilGraduationCap className={styles['icon']} />
@@ -29,7 +33,11 @@ const Qualification = () => {
           </div>
 
           <div
-            className={clsx(styles['button'], 'button--flex')}
+            className={clsx(
+              styles['button'],
+              'button--flex',
+              activeContent === 'experience' && styles['active'],
+            )}
             onClick={() => setActiveContent('experience')}
           >
             <UilBriefcaseAlt className={styles['icon']} />
