@@ -1,0 +1,32 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.125rem;
+}
+
+.icon {
+  --size: 1.125rem;
+
+  font-size: var(--size);
+  color: #fff;
+  background-color: var(--clr-title);
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  display: inline-flex;
+
+  & svg {
+    width: var(--size);
+    height: var(--size);
+  }
+
+  @media (width < 992px) {
+    --size: 1rem;
+
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+  }
+}
+
+.icon:hover {
+  background-color: var(--clr-title-dark);
+}
