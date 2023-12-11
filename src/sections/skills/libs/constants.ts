@@ -1,30 +1,54 @@
 const FRONTEND_SKILLS = [
   [
     {
-      name: 'HTML',
-      level: 'Basic',
+      name: 'React.js / Next.js',
     },
     {
-      name: 'CSS',
-      level: 'Advanced',
+      name: 'Functional components/ class components / hooks / context API',
     },
     {
-      name: 'JavaScript',
-      level: 'Intermediate',
+      name: 'Javascript (ES6+) / Typescript',
+    },
+    {
+      name: 'HTML5 / CSS3 / SASS/ SCSS / Tailwind',
+    },
+    {
+      name: 'Redux / Redux-thunk / Redux Toolkit',
+    },
+    {
+      name: 'React-hook-form / Formik',
+    },
+    {
+      name: 'MobX / GraphQL / Recoil',
+    },
+    {
+      name: 'Antd design/ Material UI',
     },
   ],
   [
     {
-      name: 'Bootstrap',
-      level: 'Intermediate',
+      name: 'GitHub / GitLab / Bitbucket',
     },
     {
-      name: 'Git',
-      level: 'Intermediate',
+      name: 'Jira / Confluence/ Agile / Trello',
     },
     {
-      name: 'React',
-      level: 'Intermediate',
+      name: 'Unit Testing (Jest, Mocha, Jasmine)',
+    },
+    {
+      name: 'Integration Testing',
+    },
+    {
+      name: 'End-to-End Testing (Cypress, Selenium)',
+    },
+    {
+      name: 'i18n / l10n',
+    },
+    {
+      name: 'WebSockets',
+    },
+    {
+      name: 'SEO optimization / Google Analytics',
     },
   ],
 ];
@@ -33,29 +57,23 @@ const BACKEND_SKILLS = [
   [
     {
       name: 'PHP',
-      level: 'Intermediate',
     },
     {
       name: 'Node Js',
-      level: 'Basic',
     },
     {
       name: 'Python',
-      level: 'Intermediate',
     },
   ],
   [
     {
       name: 'MySQL',
-      level: 'Intermediate',
     },
     {
       name: 'Firebase',
-      level: 'Intermediate',
     },
     {
       name: 'SQL',
-      level: 'Intermediate',
     },
   ],
 ];

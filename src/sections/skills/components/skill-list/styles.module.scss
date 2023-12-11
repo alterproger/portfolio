@@ -40,10 +40,11 @@
 .icon {
   font-size: 1rem;
   color: var(--clr-title);
+  flex-shrink: 0;
 }
 
 .name {
-  font-size: var(--font-size-normal);
+  font-size: var(--font-size-sm);
   font-weight: 500;
   line-height: 18px;
 

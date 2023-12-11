@@ -4,7 +4,6 @@ import styles from './styles.module.scss';
 
 type Skill = {
   name: string;
-  level: string;
 };
 
 type Properties = {
@@ -30,7 +29,6 @@ const SkillList: React.FC<Properties> = ({ title, skills }) => {
                 <BiBadgeCheck className={styles['icon']} />
                 <div>
                   <h3 className={styles['name']}>{skill.name}</h3>
-                  <span className={styles['level']}>{skill.level}</span>
                 </div>
               </div>
             ))}
