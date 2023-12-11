@@ -1,0 +1,7 @@
+.swiper-pagination-bullet {
+	background-color: var(--clr-text);
+}
+
+.swiper-pagination-bullet-active {
+	background-color: var(--clr-title);
+}

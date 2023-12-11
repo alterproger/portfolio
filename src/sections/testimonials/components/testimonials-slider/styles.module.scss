@@ -1,0 +1,35 @@
+.container {
+  width: 750px;
+
+  @media (width < 992px) {
+    width: initial;
+  }
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+  margin-bottom: var(--m-8);
+
+  @media (width < 992px) {
+    padding: 1.25rem 1.5rem;
+  }
+}
+
+.img {
+  width: 60px;
+  border-radius: 3rem;
+  margin-bottom: var(--m-4);
+}
+
+.name {
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  margin-bottom: var(--m-1);
+}
+
+.description {
+  font-size: var(--font-size-sm);
+}

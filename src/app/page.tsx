@@ -4,6 +4,7 @@ import {
   Qualification,
   Services,
   Skills,
+  Testimonials,
 } from '@/sections/sections';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Skills />
       <Services />
       <Qualification />
+      <Testimonials />
     </main>
   );
 }
