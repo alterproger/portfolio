@@ -1,0 +1,48 @@
+.form {
+  width: 360px;
+
+  @media (width < 768px) {
+    margin-inline: auto;
+  }
+
+  @media (width < 576px) {
+    width: 100%;
+  }
+}
+
+.box {
+  position: relative;
+  margin-bottom: var(--m-6);
+  height: 4rem;
+}
+
+.input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(0 0 0 / 0.1);
+  background: none;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  z-index: 1;
+}
+
+.tag {
+  position: absolute;
+  top: -0.75rem;
+  left: 1.25rem;
+  font-size: var(--font-size-sm);
+  padding: 0.25rem;
+  background-color: var(--bg-body);
+  z-index: 10;
+}
+
+.area {
+  height: 11rem;
+}
+
+.area textarea {
+  resize: none;
+}
