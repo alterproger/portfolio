@@ -2,24 +2,16 @@ import { type TimelineItem } from './types';
 
 const EDUCATION_TIMELINE: TimelineItem[] = [
   {
-    title: 'Web Design',
-    subtitle: 'Spain - Institute',
-    date: '2021 - Present',
+    title: 'Data Science',
+    subtitle:
+      'National University Lviv Polytechnic - Master of Computer Science (MSCS)',
+    date: '2019-2021',
   },
   {
-    title: 'Art Director',
-    subtitle: 'Spain - Institute',
-    date: '2020 - 2021',
-  },
-  {
-    title: 'Web Development',
-    subtitle: 'Spain - Institute',
-    date: '2018 - 2020',
-  },
-  {
-    title: 'UX Expert',
-    subtitle: 'Spain - Institute',
-    date: '2017 - 2018',
+    title: 'Data Science',
+    subtitle:
+      'National University Lviv Polytechnic - Bachelor of Computer Science',
+    date: '2015 - 2019',
   },
 ];
 
