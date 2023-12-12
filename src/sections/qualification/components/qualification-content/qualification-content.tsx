@@ -12,7 +12,7 @@ const QualificationContent: React.FC<Properties> = ({ timeline }) => {
     <div className={styles['content']}>
       {timeline.map((item, index) => (
         <div
-          key={item.title}
+          key={item.date}
           className={styles['info']}
         >
           {!isEvenNumber(index) && (
