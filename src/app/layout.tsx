@@ -1,7 +1,7 @@
+import '@/assets/styles/globals.scss';
+import { Footer, Header, ScrollToTop } from '@/components/components';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
-import '@/assets/styles/globals.scss';
-import { Footer, Header } from '@/components/components';
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600'] });
 
@@ -21,6 +21,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );

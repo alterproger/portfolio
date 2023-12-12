@@ -1,0 +1,44 @@
+.button {
+  position: fixed;
+  display: flex;
+  right: 2.5rem;
+  bottom: -20%;
+  background-color: var(--clr-title);
+  opacity: 0.8;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  z-index: var(--z-1);
+  transition: 0.4s;
+
+  @media (width < 992px) {
+    right: 1.5rem;
+    padding: 0.4rem;
+  }
+
+  @media (width < 350px) {
+    right: 1rem;
+  }
+}
+
+.icon {
+  --size: 1.5rem;
+  width: var(--size);
+  height: var(--size);
+  color: #fff;
+
+  @media (width < 992px) {
+    --size: 1.25rem;
+  }
+}
+
+.button:hover {
+  background-color: var(--clr-title-dark);
+}
+
+.button-show {
+  bottom: 3rem;
+
+  @media (width < 768px) {
+    bottom: 4rem;
+  }
+}
