@@ -15,6 +15,7 @@ import {
 import styles from './styles.module.scss';
 import clsx from 'clsx';
 import { useState } from 'react';
+import { useScroll } from '@/hooks/use-scroll';
 
 const LINKS = [
   { title: 'Home', path: '#home', icon: UilEstate },
@@ -25,11 +26,21 @@ const LINKS = [
   { title: 'Contact', path: '#contact', icon: UilMessage },
 ];
 
+const WINDOW_SCROLL_OFFSET = 80;
+
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [activeNavLink, setActiveNavLink] = useState('#home');
+
+  const { isInView: isPageScrolled } = useScroll(WINDOW_SCROLL_OFFSET);
 
   return (
-    <header className={styles['header']}>
+    <header
+      className={clsx(
+        styles['header'],
+        isPageScrolled && styles['header-scroll'],
+      )}
+    >
       <nav className={clsx('container', styles['nav'])}>
         <Link
           className={styles.logo}
@@ -47,8 +58,12 @@ const Header = () => {
               return (
                 <li key={link.title}>
                   <a
-                    className={styles['link']}
+                    className={clsx(
+                      styles['link'],
+                      link.path === activeNavLink && styles['active-link'],
+                    )}
                     href={link.path}
+                    onClick={() => setActiveNavLink(link.path)}
                   >
                     <Icon className={styles['link-icon']} />
                     {link.title}
