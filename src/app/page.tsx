@@ -1,4 +1,3 @@
-import { Footer } from '@/components/components';
 import {
   About,
   Contact,
@@ -19,7 +18,6 @@ export default function Home() {
       <Qualification />
       <Testimonials />
       <Contact />
-      <Footer />
     </main>
   );
 }
