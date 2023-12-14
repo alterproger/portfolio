@@ -7,7 +7,7 @@ import styles from './styles.module.scss';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
-import './swiper.css';
+import '@/assets/styles/swiper.css';
 
 const TestimonialsSlider = () => {
   return (
