@@ -1,0 +1,51 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(0 0 0 /0.5);
+  z-index: var(--z-3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.modal-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  padding: 4.5rem 2.5rem 2.5rem;
+  border-radius: 1.5rem;
+
+  @media (width < 576px) {
+    padding: 4.5rem 1.5rem 2.5rem;
+  }
+}
+
+.modal-close {
+  --size: 1.5rem;
+
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: var(--size);
+  height: var(--size);
+  color: var(--clr-title);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.modal-title {
+  text-align: center;
+  font-size: var(--font-size-h3);
+  font-weight: 500;
+  margin-bottom: var(--m-4);
+}
