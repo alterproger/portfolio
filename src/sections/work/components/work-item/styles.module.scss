@@ -3,6 +3,7 @@
   border: 1px solid rgb(0 0 0 / 0.1);
   padding: 1.25rem;
   border-radius: 1rem;
+  cursor: pointer;
 
   @media (width < 992px) {
     padding: 1rem;
@@ -47,6 +48,6 @@
   transition: 0.4s;
 }
 
-.button:hover .button-icon {
+:where(.card:hover, .button:hover) .button-icon {
   transform: translateX(0.25rem);
 }

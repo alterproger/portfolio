@@ -24,22 +24,26 @@ const WorkItem: React.FC<Properties> = ({
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className={styles['card']}>
-      <Image
-        className={styles['img']}
-        src={images[0]}
-        alt={`${title} project image`}
-        width={640}
-        height={420}
-      />
-      <h3 className={styles['title']}>{title}</h3>
-      <span
-        className={styles['button']}
+    <>
+      <div
+        className={styles['card']}
         onClick={() => setIsModalOpen(true)}
       >
-        View More <BiRightArrowAlt className={styles['button-icon']} />
-      </span>
-
+        <Image
+          className={styles['img']}
+          src={images[0]}
+          alt={`${title} project image`}
+          width={640}
+          height={420}
+        />
+        <h3 className={styles['title']}>{title}</h3>
+        <span
+          className={styles['button']}
+          onClick={() => setIsModalOpen(true)}
+        >
+          View More <BiRightArrowAlt className={styles['button-icon']} />
+        </span>
+      </div>
       <WorkInfoModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
@@ -49,7 +53,7 @@ const WorkItem: React.FC<Properties> = ({
         stack={stack}
         url={url}
       />
-    </div>
+    </>
   );
 };
 
