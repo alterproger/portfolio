@@ -56,10 +56,7 @@ const FRONTEND_SKILLS = [
 const BACKEND_SKILLS = [
   [
     {
-      name: 'PHP',
-    },
-    {
-      name: 'Node Js',
+      name: 'Node.js',
     },
     {
       name: 'Python',
@@ -68,7 +65,25 @@ const BACKEND_SKILLS = [
       name: 'Express / Nest / Koa',
     },
     {
+      name: 'GraphQl',
+    },
+    {
       name: 'Sequalize / TypeORM / Mongoose',
+    },
+    {
+      name: 'Jest / Mocha',
+    },
+    {
+      name: 'OAuth',
+    },
+    {
+      name: 'JWT',
+    },
+    {
+      name: 'Swagger',
+    },
+    {
+      name: 'API Blueprint',
     },
   ],
   [
@@ -85,7 +100,25 @@ const BACKEND_SKILLS = [
       name: 'PostgresQL',
     },
     {
+      name: 'Oracle',
+    },
+    {
+      name: 'Redis',
+    },
+    {
       name: 'Docker',
+    },
+    {
+      name: 'AWS Lambda',
+    },
+    {
+      name: 'WebSocket',
+    },
+    {
+      name: 'Cron',
+    },
+    {
+      name: 'Nginx',
     },
   ],
 ];
