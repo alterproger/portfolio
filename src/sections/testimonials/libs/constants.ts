@@ -8,21 +8,27 @@ const TESTIMONIALS = [
     image: image1,
     title: 'John Doe',
     description:
-      'A really good job, all aspects of the project were followed step by step and with good results.',
+      'Oleks was a pleasure to work with. Speedy, fair, and produces great work. Excellent frontend dev. A++',
   },
   {
     id: 2,
     image: image2,
     title: 'Harry Clinton',
     description:
-      'A really good job, all aspects of the project were followed step by step and with good results.',
+      "Oleksandr was terrific to work with. He delivered beyond my expectations. I'd highly recommend him.",
   },
   {
     id: 3,
     image: image3,
     title: 'Sara Cill',
     description:
-      'A really good job, all aspects of the project were followed step by step and with good results.',
+      "Oleksandr did an excellent work and I'm looking forward to work with him again in future projects.",
+  },
+  {
+    id: 4,
+    image: image1,
+    title: 'Sara Cill',
+    description: 'Great job! Will hire him for future projects. Thanks!',
   },
 ];
 
