@@ -4,13 +4,13 @@ const FRONTEND_SKILLS = [
       name: 'React.js / Next.js',
     },
     {
-      name: 'Functional components/ class components / hooks / context API',
-    },
-    {
       name: 'Javascript (ES6+) / Typescript',
     },
     {
       name: 'HTML5 / CSS3 / SASS/ SCSS / Tailwind',
+    },
+    {
+      name: 'Functional components/ class components / hooks / context API',
     },
     {
       name: 'Redux / Redux-thunk / Redux Toolkit',
@@ -64,6 +64,12 @@ const BACKEND_SKILLS = [
     {
       name: 'Python',
     },
+    {
+      name: 'Express / Nest / Koa',
+    },
+    {
+      name: 'Sequalize / TypeORM / Mongoose',
+    },
   ],
   [
     {
@@ -74,6 +80,12 @@ const BACKEND_SKILLS = [
     },
     {
       name: 'SQL',
+    },
+    {
+      name: 'PostgresQL',
+    },
+    {
+      name: 'Docker',
     },
   ],
 ];

@@ -11,7 +11,7 @@ const Skills = () => {
       id="skills"
     >
       <SectionTitle>Skills</SectionTitle>
-      <SectionSubtitle>My technical level</SectionSubtitle>
+      <SectionSubtitle>My technical stack</SectionSubtitle>
 
       <div className={clsx('container grid', styles['container'])}>
         <SkillList
