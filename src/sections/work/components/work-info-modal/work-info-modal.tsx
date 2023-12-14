@@ -1,7 +1,8 @@
 import { Modal, ModalProperties, ModalTitle } from '@/components/components';
 import clsx from 'clsx';
-import Image, { StaticImageData } from 'next/image';
+import { type StaticImageData } from 'next/image';
 import { BiLinkExternal } from 'react-icons/bi';
+import { ImageSlider } from './components/components';
 import styles from './styles.module.scss';
 
 type Properties = Omit<ModalProperties, 'children'> & {
@@ -26,13 +27,7 @@ const WorkInfoModal: React.FC<Properties> = ({
       isOpen={isOpen}
       onClose={onClose}
     >
-      <Image
-        className={styles['img']}
-        src={images[0]}
-        alt={`${title} project image`}
-        width={640}
-        height={420}
-      />
+      <ImageSlider images={images} />
       <ModalTitle>{title}</ModalTitle>
       <p className={styles['description']}>{description}</p>
       <div className={styles['content']}>

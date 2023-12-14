@@ -7,7 +7,7 @@ import work5 from '@/assets/img/works/work5.jpg';
 const PROJECTS = [
   {
     id: 1,
-    images: [work1],
+    images: [work1, work2],
     title: 'Web design',
     description:
       'Platform made for people who wants to upgrade their programming skills.',

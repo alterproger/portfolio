@@ -1,15 +1,3 @@
-.img {
-  display: block;
-  margin-inline: auto;
-  border-radius: 1rem;
-  margin-bottom: var(--m-4);
-  object-fit: cover;
-
-  @media (width < 992px) {
-    margin-bottom: 0.75rem;
-  }
-}
-
 .description {
   font-size: var(--font-size-sm);
   color: var(--clr-text);
