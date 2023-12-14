@@ -1,14 +1,11 @@
 'use client';
 
-import {
-  UilArrowRight,
-  UilCheckCircle,
-  UilTimes,
-} from '@iconscout/react-unicons';
+import { UilArrowRight, UilCheckCircle } from '@iconscout/react-unicons';
 import clsx from 'clsx';
 import { useState } from 'react';
 import { type Specialty as Properties } from '../../libs/types';
 import styles from './styles.module.scss';
+import { Modal, ModalTitle } from '@/components/components';
 
 const Specialty: React.FC<Properties> = ({
   icon,
@@ -34,37 +31,25 @@ const Specialty: React.FC<Properties> = ({
         View More <UilArrowRight className={styles['button-icon']} />
       </span>
 
-      <div
-        className={clsx(styles['modal'], isModalOpen && styles['modal-active'])}
-        onClick={() => setIsModalOpen(false)}
+      <Modal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
       >
-        <div
-          onClick={(e) => {
-            e.stopPropagation();
-          }}
-          className={styles['modal-content']}
-        >
-          <UilTimes
-            className={styles['modal-close']}
-            onClick={() => setIsModalOpen(false)}
-          />
+        <ModalTitle>{title}</ModalTitle>
+        <p className={styles['modal-description']}>{description}</p>
 
-          <h3 className={styles['modal-title']}>{title}</h3>
-          <p className={styles['modal-description']}>{description}</p>
-
-          <ul className={clsx('grid', styles['modal-services'])}>
-            {services.map((service) => (
-              <li
-                key={service}
-                className={styles['modal-service']}
-              >
-                <UilCheckCircle className={styles['modal-icon']} />
-                <p className={styles['modal-info']}>{service}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+        <ul className={clsx('grid', styles['modal-services'])}>
+          {services.map((service) => (
+            <li
+              key={service}
+              className={styles['modal-service']}
+            >
+              <UilCheckCircle className={styles['modal-icon']} />
+              <p className={styles['modal-info']}>{service}</p>
+            </li>
+          ))}
+        </ul>
+      </Modal>
     </div>
   );
 };
