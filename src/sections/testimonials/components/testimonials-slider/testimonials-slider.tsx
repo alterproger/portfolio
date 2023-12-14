@@ -1,13 +1,15 @@
 'use client';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import { TESTIMONIALS } from '../../libs/constants';
 import styles from './styles.module.scss';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import '@/assets/styles/swiper.css';
+
+const AUTOPLAY_DELAY = 6000;
 
 const TestimonialsSlider = () => {
   return (
@@ -19,6 +21,9 @@ const TestimonialsSlider = () => {
       pagination={{
         clickable: true,
       }}
+      autoplay={{
+        delay: AUTOPLAY_DELAY,
+      }}
       breakpoints={{
         576: {
           slidesPerView: 2,
@@ -28,7 +33,7 @@ const TestimonialsSlider = () => {
           spaceBetween: 48,
         },
       }}
-      modules={[Pagination]}
+      modules={[Pagination, Autoplay]}
     >
       {TESTIMONIALS.map(({ id, description, image, title }) => (
         <SwiperSlide
