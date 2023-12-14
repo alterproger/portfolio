@@ -7,33 +7,53 @@ import work5 from '@/assets/img/works/work5.jpg';
 const PROJECTS = [
   {
     id: 1,
-    image: work1,
+    images: [work1],
     title: 'Web design',
+    description:
+      'Platform made for people who wants to upgrade their programming skills.',
     category: 'web',
+    url: 'https://www.google.com/',
+    stack: ['NextJs', 'React'],
   },
   {
     id: 2,
-    image: work2,
+    images: [work2],
     title: 'App movil',
+    description:
+      'Platform made for people who wants to upgrade their programming skills.',
     category: 'app',
+    url: 'https://www.google.com/',
+    stack: ['NextJs', 'React'],
   },
   {
     id: 3,
-    image: work3,
+    images: [work3],
     title: 'Brand design',
+    description:
+      'Platform made for people who wants to upgrade their programming skills.',
     category: 'design',
+    url: 'https://www.google.com/',
+    stack: ['NextJs', 'React'],
   },
   {
     id: 4,
-    image: work4,
+    images: [work4],
     title: 'App movil',
+    description:
+      'Platform made for people who wants to upgrade their programming skills.',
     category: 'app',
+    url: 'https://www.google.com/',
+    stack: ['NextJs', 'React'],
   },
   {
     id: 5,
-    image: work5,
+    images: [work5],
     title: 'Web design',
+    description:
+      'Platform made for people who wants to upgrade their programming skills.',
     category: 'web',
+    url: 'https://www.google.com/',
+    stack: ['NextJs', 'React'],
   },
 ];
 

@@ -9,7 +9,7 @@ const ModalTitle = ({ children }: { children: React.ReactNode }) => (
 type ModalProperties = {
   isOpen: boolean;
   onClose: () => void;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 const Modal: React.FC<ModalProperties> = ({ isOpen, onClose, children }) => {
