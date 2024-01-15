@@ -46,7 +46,7 @@ const Header = () => {
           className={styles.logo}
           href="/"
         >
-          Smith
+          Tyshkevych
         </Link>
         <menu
           className={clsx(styles['menu'], isMenuOpen && styles['menu-show'])}

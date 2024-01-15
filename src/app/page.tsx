@@ -7,7 +7,7 @@ import {
   Skills,
   Testimonials,
   Work,
-} from '@/sections/sections';
+} from "@/sections/sections";
 
 export default function Home() {
   return (

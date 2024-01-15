@@ -6,10 +6,10 @@ const Info = () => {
   return (
     <div className={styles['info']}>
       <h1 className={styles['title']}>
-        John Smith
+        John Tyshkevych
         <HandIcon className={styles['hand']} />
       </h1>
-      <h3 className={styles['subtitle']}>Visual Designer</h3>
+      <h3 className={styles['subtitle']}>Software Engineer</h3>
       <p className={styles['description']}>
         I&apos;m creative designer based in New York, and I&apos;m very
         passionate and dedicated to my work.
