@@ -13,7 +13,7 @@ const Info = () => {
       <p className={styles["description"]}>
         I&apos;m software engineer based in Lviv, and I&apos;m very passionate
         and dedicated to my work.
-        <p>Let&apos;s cook something amazing together!</p>
+        <b>Let&apos;s cook something amazing together!</b>
       </p>
       <a className="button button--flex" href="#contact">
         Say hello
